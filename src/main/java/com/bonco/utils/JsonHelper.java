@@ -23,8 +23,8 @@ public class JsonHelper {
 	
 	public static String getResourceContents(String fileName)
 	{
-		//Path p = FileSystems.getDefault().getPath("C:/Attendance/", fileName);
-		Path p = FileSystems.getDefault().getPath("/Users/pratiksarvaiya/Documents/AttendanceApi/Config", fileName);
+		Path p = FileSystems.getDefault().getPath("C:/Attendance/", fileName);
+		//Path p = FileSystems.getDefault().getPath("/Users/pratiksarvaiya/Documents/AttendanceApi/Config", fileName);
 		String retVal = null;
 		try {
 			retVal = new String(Files.readAllBytes(p));
